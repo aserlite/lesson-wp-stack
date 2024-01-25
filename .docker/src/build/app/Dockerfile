@@ -72,8 +72,8 @@ ARG DOCKER_WWW_DATA_UID
 ARG DOCKER_WWW_DATA_GID
 
 RUN echo "Docker user uid and gid is ${DOCKER_WWW_DATA_UID}:${DOCKER_WWW_DATA_GID}"
-RUN usermod -u ${DOCKER_WWW_DATA_UID} www-data
-RUN groupmod -g ${DOCKER_WWW_DATA_GID} www-data
+#RUN usermod -u ${DOCKER_WWW_DATA_UID} www-data
+#RUN groupmod -g ${DOCKER_WWW_DATA_GID} www-data
 
 
 #RIGHTS
