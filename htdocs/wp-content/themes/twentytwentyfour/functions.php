@@ -204,3 +204,11 @@ if ( ! function_exists( 'twentytwentyfour_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'twentytwentyfour_pattern_categories' );
+
+
+function enqueue_single_portfolio_style() {
+    if (is_singular('portfolio')) {
+        wp_enqueue_style('single-portfolio-style', get_template_directory_uri() . '/styles/single-portfolio.css');
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_single_portfolio_style');

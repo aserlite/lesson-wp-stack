@@ -1,0 +1,55 @@
+/* portfolio-block-styles.css */
+
+.portfolio-block {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: calc(33.33% - 20px); /* Ajustez la largeur en fonction du nombre de colonnes souhaité */
+    margin: 0 10px 20px 0;
+}
+
+.portfolio-item a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-item a:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item .portfolio-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; /* Ajout de border-radius pour arrondir les coins de l'image */
+    overflow: hidden; /* Assure que l'image ne dépasse pas du cadre */
+}
+
+.portfolio-item .portfolio-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+body {
+    background: #000;
+}
