@@ -14,6 +14,7 @@ Template Name: Single Portfolio
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
                     <?php the_title('<h1 class="entry-title rotate">', '</h1>'); ?>
+                    <h2><?php the_field('test'); ?></h2>
                 </header>
 
                 <?php

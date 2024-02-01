@@ -49,7 +49,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_USER=database
       - MYSQL_PASSWORD=database
-      - MYSQL_DATABASE=database
+        - MYSQL_DATABASE=database
     volumes:
       - ./../../.data/db:/var/lib/mysql:delegated
 

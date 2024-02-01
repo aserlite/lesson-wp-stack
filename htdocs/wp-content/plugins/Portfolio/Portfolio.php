@@ -7,6 +7,8 @@ Author: Arthur
 Version: 1.0.0
 Author URI: http://arthur.com
 */
+
+require_once 'inc/ACF.php';
 class Portfolio {
 
     public function init() {
@@ -21,6 +23,7 @@ class Portfolio {
         add_action('save_post_portfolio', array($this, 'save_project_completion_date'));
         add_action('init', array($this, 'register_portfolio_specific_block'));
 
+        (new \Portfolio\ACF())->register();
     }
 
     public function register_portfolio() {
