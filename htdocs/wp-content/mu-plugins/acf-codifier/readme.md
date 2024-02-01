@@ -240,7 +240,7 @@ Codifier has a feature to register Gutenberg blocks using ACF's register block f
 Block's constructor takes two mandatory parameters: the title and the name (or key) of the block. The properties are then set for the block with appropriate methods.
 
 ```php
-$block = new codifier\src\Block( 'Some block', 'some_block' );
+$block = new \Geniem\ACF\Block( 'Some block', 'some_block' );
 $block->set_category( 'common' );
 $block->add_post_type( 'post' );
 $block->set_mode( 'edit' );
@@ -251,7 +251,7 @@ The rendering of the block happens with a Renderer class. Codifier includes thre
 The following uses the `print_r()` method to output a list of the data from the fields.
 
 ```php
-$renderer = new codifier\src\Renderer\CallableRenderer( function( $data ) {
+$renderer = new \Geniem\ACF\Renderer\CallableRenderer( function( $data ) {
   return print_r( $data, true );
 });
 

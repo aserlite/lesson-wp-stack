@@ -8,7 +8,7 @@ namespace Geniem\ACF\Field;
 use Geniem\ACF\Field\Common\AppendPrepend;
 use Geniem\ACF\Field\Common\Disabled;
 use Geniem\ACF\Field\Common\MinMax;
-use codifier\src\Field\Common\Placeholder;
+use Geniem\ACF\Field\Common\Placeholder;
 use Geniem\ACF\Field\Common\ReadonlyTrait;
 
 /**

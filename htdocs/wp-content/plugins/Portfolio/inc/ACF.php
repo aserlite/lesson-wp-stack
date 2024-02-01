@@ -16,7 +16,7 @@ class ACF
             ->register();
 
         $rule_group = new RuleGroup();
-        $rule_group->add_rule( 'post_type', '==', PostType::SLUG );
+        $rule_group->add_rule( 'post_type', '==', 'Projet' );
 
         $field_group->add_rule_group( $rule_group );
 

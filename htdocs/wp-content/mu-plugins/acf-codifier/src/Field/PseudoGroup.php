@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF\Field;
 
-use muuse mu/**
+/**
  * Class PseudoGroup
  */
 class PseudoGroup extends GroupableField implements PseudoGroupableField {

@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF\Field;
 
-use muuse mu/**
+/**
  * Class Tab
  */
 class Tab extends GroupableField implements PseudoGroupableField {

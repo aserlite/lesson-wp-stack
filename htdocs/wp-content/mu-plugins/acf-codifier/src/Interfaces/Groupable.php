@@ -10,7 +10,7 @@ use Geniem\ACF\Field;
 /**
  * Groupable interface
  *
- * @see codifier\src\Field\Common\Groupable
+ * @see \Geniem\ACF\Field\Common\Groupable
  */
 interface Groupable {
     // phpcs:disable

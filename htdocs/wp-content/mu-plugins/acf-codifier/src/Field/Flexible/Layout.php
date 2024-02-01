@@ -6,7 +6,7 @@
 namespace Geniem\ACF\Field\Flexible;
 
 use Geniem\ACF\Field,
-    codifier\src\Field\Common\Groupable,
+    Geniem\ACF\Field\Common\Groupable,
     Geniem\ACF\Field\Common\MinMax,
     Geniem\ACF\Interfaces\Groupable as GroupableInterface;
 

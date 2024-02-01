@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF\Field;
 
-use mu/**
+/**
  * Class Range
  */
 class Range extends Number {

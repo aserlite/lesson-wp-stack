@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF\Field;
 
-use mu/**
+/**
  * Class ExtendedWysiwyg
  */
 class ExtendedWysiwyg extends Wysiwyg {

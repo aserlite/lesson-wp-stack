@@ -8,7 +8,7 @@ namespace Geniem\ACF\Field;
 /**
  * Class PostContent
  */
-class PostContent extends codifier\src\Field\Wysiwyg {
+class PostContent extends \Geniem\ACF\Field\Wysiwyg {
 
     /**
      * Overridden constructor to provide our special functionality

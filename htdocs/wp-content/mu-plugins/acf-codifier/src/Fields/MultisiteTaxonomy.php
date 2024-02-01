@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF\Fields;
 
-use muadd_action( 'acf/init', function() {
+add_action( 'acf/init', function() {
     /**
      * ACF MultisiteTaxonomy Relationship class
      */

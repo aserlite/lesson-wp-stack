@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF\Field;
 
-use muuse mu/**
+/**
  * Class Accordion
  */
 class Accordion extends GroupableField implements PseudoGroupableField {

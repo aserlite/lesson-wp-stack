@@ -2,7 +2,7 @@
 namespace Geniem\ACF\Field;
 
 use Geniem\ACF\Field\Common\AppendPrepend;
-use codifier\src\Field\Common\Placeholder;
+use Geniem\ACF\Field\Common\Placeholder;
 
 class Password extends \Geniem\ACF\Field {
 

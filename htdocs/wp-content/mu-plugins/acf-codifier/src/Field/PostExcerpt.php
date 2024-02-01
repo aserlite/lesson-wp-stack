@@ -8,7 +8,7 @@ namespace Geniem\ACF\Field;
 /**
  * Class Excerpt
  */
-class PostExcerpt extends codifier\src\Field\Textarea {
+class PostExcerpt extends \Geniem\ACF\Field\Textarea {
 
     /**
      * Overridden constructor to provide our special functionality

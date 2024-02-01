@@ -5,7 +5,7 @@
 
 namespace Geniem\ACF;
 
-use codifier\src\Field\Common\Groupable;
+use Geniem\ACF\Field\Common\Groupable;
 use Geniem\ACF\Exception;
 use Geniem\ACF\Group;
 use Geniem\ACF\Interfaces\Groupable as GroupableInterface;

@@ -63,7 +63,7 @@ trait Groupable {
             foreach ( $obj[ $this->fields_var() ] as $field ) {
                 $sub_fields = [];
 
-                if ( $field instanceof codifier\src\Field\PseudoGroupableField ) {
+                if ( $field instanceof \Geniem\ACF\Field\PseudoGroupableField ) {
                     // Get the subfields from the tab
                     $sub_fields = $field->get_fields();
                 }
@@ -119,7 +119,7 @@ trait Groupable {
         foreach ( $fields as $field ) {
             $sub_fields = [];
 
-            if ( $field instanceof codifier\src\Field\PseudoGroupableField ) {
+            if ( $field instanceof \Geniem\ACF\Field\PseudoGroupableField ) {
                 // Get the subfields
                 $sub_fields = $field->get_fields();
             }

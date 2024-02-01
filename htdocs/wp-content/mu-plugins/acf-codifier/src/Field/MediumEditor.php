@@ -10,7 +10,7 @@
 
 namespace Geniem\ACF\Field;
 
-use codifier\src\Field\Common\Placeholder;
+use Geniem\ACF\Field\Common\Placeholder;
 
 /**
  * Class MediumEditor
@@ -212,12 +212,12 @@ class MediumEditor extends \Geniem\ACF\Field {
      *
      * The custom button must be defined as a \Geniem\ACF\Field\MediumEditor\CustomButton object.
      *
-     * @param codifier\src\Field\MediumEditor\CustomButton $custom_button CustomButton to add.
-     * @return self
      * @throws \Geniem\ACF\Exception Throws error if $custom_button is not valid.
+     * @param \Geniem\ACF\Field\MediumEditor\CustomButton $custom_button CustomButton to add.
+     * @return self
      */
-    public function add_custom_button( codifier\src\Field\MediumEditor\CustomButton $custom_button ) {
-        if ( ! ( $custom_button instanceof codifier\src\Field\MediumEditor\CustomButton ) ) {
+    public function add_custom_button( \Geniem\ACF\Field\MediumEditor\CustomButton $custom_button ) {
+        if ( ! ( $custom_button instanceof \Geniem\ACF\Field\MediumEditor\CustomButton ) ) {
             throw new \Geniem\ACF\Exception( 'Geniem\ACF\Field\MediumEditor: add_custom_button() requires an argument that is of type "\Geniem\ACF\MediumEditor\CustomButton"' );
         }
 
@@ -233,12 +233,12 @@ class MediumEditor extends \Geniem\ACF\Field {
     /**
      * Remove a button from custom buttons
      *
-     * @param  codifier\src\Field\MediumEditor\CustomButton|string $custom_button Either a custom button class or customButton name.
+     * @throws \Geniem\ACF\Exception Throws error if $custom_button is not valid.
+     * @param  \Geniem\ACF\Field\MediumEditor\CustomButton|string $custom_button Either a custom button class or customButton name.
      * @return self
-     *@throws \Geniem\ACF\Exception Throws error if $custom_button is not valid.
      */
     public function remove_custom_button( $custom_button ) {
-        if ( ! ( $custom_button instanceof codifier\src\Field\MediumEditor\CustomButton || is_string( $custom_button ) ) ) {
+        if ( ! ( $custom_button instanceof \Geniem\ACF\Field\MediumEditor\CustomButton || is_string( $custom_button ) ) ) {
             throw new \Geniem\ACF\Exception( 'Geniem\ACF\Field\MediumEditor: remove_custom_button() requires an argument that is a string or type "\Geniem\ACF\MediumEditor\CustomButton"' );
         }
 
@@ -258,7 +258,7 @@ class MediumEditor extends \Geniem\ACF\Field {
      * Get custom button by name
      *
      * @param  string $custom_button CustomButton name.
-     * @return codifier\src\Field\MediumEditor\CustomButton
+     * @return \Geniem\ACF\Field\MediumEditor\CustomButton
      */
     public function get_custom_button( string $custom_button ) {
         return $this->custom_buttons[ $custom_button ];
